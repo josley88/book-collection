@@ -11,24 +11,24 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field" id='title'>
     <%= form.label :title %>
     <%= form.text_field :title %>
   </div>
 
-  <div class="field">
+  <div class="field" id='author'>
     <%= form.label :author %>
     <%= form.text_field :author %>
   </div>
 
-  <div class="field">
+  <div class="field" id='price'>
     <%= form.label :price %>
     <%= form.text_field :price %>
   </div>
 
-  <div class="field">
+  <div class="field" id='publicationDate'>
     <%= form.label :publicationDate %>
-    <%= form.date_select :publicationDate %>
+    <%= form.date_select :publicationDate, :order => [:month, :day, :year] %>
   </div>
 
   <div class="actions">
